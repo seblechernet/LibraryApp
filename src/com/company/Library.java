@@ -130,6 +130,7 @@ public class Library {
         }
     }
 
+
     public static void addingBooks(){
         Book newBook=new Book();
         System.out.println("Title of the book:");
@@ -159,8 +160,10 @@ public class Library {
             if (title.equals(eachBook.getTitle()) && eachBook.isStatus()) {
                 eachBook.setStatus(false);
             }
+            else
+                System.out.println("You only can borrow books in the list Write the Title correctly");
         }
-       
+
 
     }
     public static void returningBooks(){
